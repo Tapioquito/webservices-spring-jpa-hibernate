@@ -2,8 +2,6 @@ package com.tapioquito.course.entities;
 
 import java.io.Serializable;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,7 +11,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_user") // renomeando a tabela para não gerar conflito com o banco H2
 public class User implements Serializable {
-    private static final long serialversionUID = 1L;
+    // private static final long serialversionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
